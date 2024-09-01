@@ -1,6 +1,13 @@
 #include <iostream>
 #include <vector>
 
+/*
+ * Este archivo contiene código adaptado de:
+ * https://pastebin.com/ZE0H0bRr
+ * Fuente: https://youtu.be/ChvEYb7UT34
+ */
+
+
 void multiplyMatrices(std::vector<std::vector<uint32_t>>& r, 
                       const std::vector<std::vector<uint32_t>>& a, 
                       const std::vector<std::vector<uint32_t>>& b) {

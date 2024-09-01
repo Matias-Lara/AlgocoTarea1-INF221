@@ -1,6 +1,13 @@
 #include <iostream>
 #include <vector>
 
+/*
+ * Este archivo contiene código adaptado de:
+ * https://pastebin.com/9TNNbwGk
+ * Fuente: https://youtu.be/ChvEYb7UT34
+ */
+
+
 // Función para transponer una matriz
 void transposeMatrix(std::vector<std::vector<uint32_t>>& m) {
     uint16_t size = m.size(); // Suponemos que la matriz es cuadrada
