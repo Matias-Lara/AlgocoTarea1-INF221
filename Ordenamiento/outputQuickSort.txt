@@ -1,0 +1,26 @@
+Arreglos Aleatorios: 
+Vector 1: El arreglo de tamanio: 10 tardo 0 ms en ordenarse con QuickSort
+
+Vector 2: El arreglo de tamanio: 100 tardo 0 ms en ordenarse con QuickSort
+
+Vector 3: El arreglo de tamanio: 1000 tardo 0 ms en ordenarse con QuickSort
+
+Vector 4: El arreglo de tamanio: 10000 tardo 2 ms en ordenarse con QuickSort
+
+Vector 5: El arreglo de tamanio: 100000 tardo 131 ms en ordenarse con QuickSort
+
+Vector 6: El arreglo de tamanio: 1e+06 tardo 12048 ms en ordenarse con QuickSort
+
+Arreglos Ordenados: 
+Vector 1: El arreglo de tamanio: 10 tardo 0 ms en ordenarse con QuickSort
+
+Vector 2: El arreglo de tamanio: 100 tardo 0 ms en ordenarse con QuickSort
+
+Vector 3: El arreglo de tamanio: 1000 tardo 0 ms en ordenarse con QuickSort
+
+Vector 4: El arreglo de tamanio: 10000 tardo 1 ms en ordenarse con QuickSort
+
+Vector 5: El arreglo de tamanio: 100000 tardo 12 ms en ordenarse con QuickSort
+
+Vector 6: El arreglo de tamanio: 1e+06 tardo 150 ms en ordenarse con QuickSort
+

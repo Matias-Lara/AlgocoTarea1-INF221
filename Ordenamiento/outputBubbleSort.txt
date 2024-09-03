@@ -1,0 +1,26 @@
+Arreglos Aleatorios: 
+Vector 1: El arreglo de tamanio: 10 tardo 0 ms en ordenarse con BubbleSort
+
+Vector 2: El arreglo de tamanio: 100 tardo 0 ms en ordenarse con BubbleSort
+
+Vector 3: El arreglo de tamanio: 1000 tardo 5 ms en ordenarse con BubbleSort
+
+Vector 4: El arreglo de tamanio: 10000 tardo 675 ms en ordenarse con BubbleSort
+
+Vector 5: El arreglo de tamanio: 100000 tardo 68080 ms en ordenarse con BubbleSort
+
+Vector 6: El arreglo de tamanio: 1e+06 tardo 7619576 ms en ordenarse con BubbleSort
+
+Arreglos Ordenados: 
+Vector 1: El arreglo de tamanio: 10 tardo 0 ms en ordenarse con BubbleSort
+
+Vector 2: El arreglo de tamanio: 100 tardo 0 ms en ordenarse con BubbleSort
+
+Vector 3: El arreglo de tamanio: 1000 tardo 2 ms en ordenarse con BubbleSort
+
+Vector 4: El arreglo de tamanio: 10000 tardo 269 ms en ordenarse con BubbleSort
+
+Vector 5: El arreglo de tamanio: 100000 tardo 27893 ms en ordenarse con BubbleSort
+
+Vector 6: El arreglo de tamanio: 1e+06 tardo 2080269 ms en ordenarse con BubbleSort
+
