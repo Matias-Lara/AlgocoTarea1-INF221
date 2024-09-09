@@ -38,11 +38,11 @@ vector<int> LineToVector(const string& line) {
     vector<int> result;
     string cleanedLine = line;
 
-    // Eliminar corchetes
+    //Eliminar corchetes
     cleanedLine.erase(remove(cleanedLine.begin(), cleanedLine.end(), '['), cleanedLine.end());
     cleanedLine.erase(remove(cleanedLine.begin(), cleanedLine.end(), ']'), cleanedLine.end());
 
-    // Usar stringstream para separar por comas y convertir a enteros
+    //Usar stringstream para separar por comas y convertir a enteros
     stringstream ss(cleanedLine);
     string item;
     while (getline(ss, item, ',')) {
@@ -54,13 +54,13 @@ vector<int> LineToVector(const string& line) {
 
 //Lee el input txt que se le va a entregar a los algoritmos de ordenamiento
 vector<vector<int>> readInputSort(const string& filename) {
-    ifstream inputFile("../" + filename); //Accede a "inputSort.txt" desde "Algoritmos"
+    ifstream inputFile(filename); //Accede a "inputSort.txt" desde "Algoritmos"
     string line;
     vector<vector<int>> allArrays;
 
     if (!inputFile) {
         cerr << "Error al abrir el archivo." << endl;
-        return allArrays; // Retorna un vector vacío en caso de error
+        return allArrays; //Retorna un vector vacío en caso de error
     }
 
     while (getline(inputFile, line)) {
@@ -72,6 +72,49 @@ vector<vector<int>> readInputSort(const string& filename) {
 
     inputFile.close();
 
-    // Aquí es donde faltaba el retorno
     return allArrays;
+}
+
+// Esta función imprime la información del arreglo ordenado en el archivo de salida
+void printSortingResult(std::ofstream& outputFile, int i, int size, float duration, const std::string& algorithmName) {
+    
+    // Establecemos la precisión de los números flotantes
+    outputFile << std::fixed << std::setprecision(3);
+    
+    if (i + 1 <= 6) {
+        if (i + 1 == 1) {
+            outputFile << "Arreglos Aleatorios: " << std::endl;
+        }
+        outputFile << "Vector " << i + 1 << ": ";
+        outputFile << "El arreglo de tamanio: " << pow(10, i + 1) << " tardo " << duration << " ms" 
+                   << " en ordenarse con " << algorithmName << std::endl;
+        outputFile << std::endl;
+    } 
+    else if (i + 1 <= 12) {
+        if (i + 1 == 7) {
+            outputFile << "Arreglos Ordenados de menor a mayor: " << std::endl;
+        }
+        outputFile << "Vector " << i - 5 << ": ";
+        outputFile << "El arreglo de tamanio: " << pow(10, i - 5) << " tardo " << duration << " ms" 
+                   << " en ordenarse con " << algorithmName << std::endl;
+        outputFile << std::endl;
+    } 
+    else if (i + 1 <= 18) {
+        if (i + 1 == 13) {
+            outputFile << "Arreglos en forma de montania: " << std::endl;
+        }
+        outputFile << "Vector " << i - 11 << ": ";
+        outputFile << "El arreglo de tamanio: " << pow(10, i - 11) << " tardo " << duration << " ms" 
+                   << " en ordenarse con " << algorithmName << std::endl;
+        outputFile << std::endl;
+    } 
+    else {
+        if (i + 1 == 19) {
+            outputFile << "Arreglos con muchos valores repetidos: " << std::endl;
+        }
+        outputFile << "Vector " << i - 17 << ": ";
+        outputFile << "El arreglo de tamanio: " << pow(10, i - 17) << " tardo " << duration << " ms" 
+                   << " en ordenarse con " << algorithmName << std::endl;
+        outputFile << std::endl;
+    }
 }

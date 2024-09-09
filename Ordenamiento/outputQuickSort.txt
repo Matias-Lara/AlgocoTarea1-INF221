@@ -1,26 +1,52 @@
 Arreglos Aleatorios: 
-Vector 1: El arreglo de tamanio: 10 tardo 0 ms en ordenarse con QuickSort
+Vector 1: El arreglo de tamanio: 10.000 tardo 0.001 ms en ordenarse con QuickSort
 
-Vector 2: El arreglo de tamanio: 100 tardo 0 ms en ordenarse con QuickSort
+Vector 2: El arreglo de tamanio: 100.000 tardo 0.011 ms en ordenarse con QuickSort
 
-Vector 3: El arreglo de tamanio: 1000 tardo 0 ms en ordenarse con QuickSort
+Vector 3: El arreglo de tamanio: 1000.000 tardo 0.180 ms en ordenarse con QuickSort
 
-Vector 4: El arreglo de tamanio: 10000 tardo 2 ms en ordenarse con QuickSort
+Vector 4: El arreglo de tamanio: 10000.000 tardo 2.083 ms en ordenarse con QuickSort
 
-Vector 5: El arreglo de tamanio: 100000 tardo 131 ms en ordenarse con QuickSort
+Vector 5: El arreglo de tamanio: 100000.000 tardo 24.767 ms en ordenarse con QuickSort
 
-Vector 6: El arreglo de tamanio: 1e+06 tardo 12048 ms en ordenarse con QuickSort
+Vector 6: El arreglo de tamanio: 1000000.000 tardo 304.562 ms en ordenarse con QuickSort
 
-Arreglos Ordenados: 
-Vector 1: El arreglo de tamanio: 10 tardo 0 ms en ordenarse con QuickSort
+Arreglos Ordenados de menor a mayor: 
+Vector 1: El arreglo de tamanio: 10.000 tardo 0.001 ms en ordenarse con QuickSort
 
-Vector 2: El arreglo de tamanio: 100 tardo 0 ms en ordenarse con QuickSort
+Vector 2: El arreglo de tamanio: 100.000 tardo 0.008 ms en ordenarse con QuickSort
 
-Vector 3: El arreglo de tamanio: 1000 tardo 0 ms en ordenarse con QuickSort
+Vector 3: El arreglo de tamanio: 1000.000 tardo 0.149 ms en ordenarse con QuickSort
 
-Vector 4: El arreglo de tamanio: 10000 tardo 1 ms en ordenarse con QuickSort
+Vector 4: El arreglo de tamanio: 10000.000 tardo 1.554 ms en ordenarse con QuickSort
 
-Vector 5: El arreglo de tamanio: 100000 tardo 12 ms en ordenarse con QuickSort
+Vector 5: El arreglo de tamanio: 100000.000 tardo 20.515 ms en ordenarse con QuickSort
 
-Vector 6: El arreglo de tamanio: 1e+06 tardo 150 ms en ordenarse con QuickSort
+Vector 6: El arreglo de tamanio: 1000000.000 tardo 243.115 ms en ordenarse con QuickSort
+
+Arreglos en forma de montania: 
+Vector 1: El arreglo de tamanio: 10.000 tardo 0.001 ms en ordenarse con QuickSort
+
+Vector 2: El arreglo de tamanio: 100.000 tardo 0.010 ms en ordenarse con QuickSort
+
+Vector 3: El arreglo de tamanio: 1000.000 tardo 0.273 ms en ordenarse con QuickSort
+
+Vector 4: El arreglo de tamanio: 10000.000 tardo 1.468 ms en ordenarse con QuickSort
+
+Vector 5: El arreglo de tamanio: 100000.000 tardo 20.823 ms en ordenarse con QuickSort
+
+Vector 6: El arreglo de tamanio: 1000000.000 tardo 260.416 ms en ordenarse con QuickSort
+
+Arreglos con muchos valores repetidos: 
+Vector 1: El arreglo de tamanio: 10.000 tardo 0.002 ms en ordenarse con QuickSort
+
+Vector 2: El arreglo de tamanio: 100.000 tardo 0.011 ms en ordenarse con QuickSort
+
+Vector 3: El arreglo de tamanio: 1000.000 tardo 0.176 ms en ordenarse con QuickSort
+
+Vector 4: El arreglo de tamanio: 10000.000 tardo 6.221 ms en ordenarse con QuickSort
+
+Vector 5: El arreglo de tamanio: 100000.000 tardo 315.364 ms en ordenarse con QuickSort
+
+Vector 6: El arreglo de tamanio: 1000000.000 tardo 30820.342 ms en ordenarse con QuickSort
 

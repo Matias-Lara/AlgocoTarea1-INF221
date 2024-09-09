@@ -19,5 +19,9 @@
 #include <chrono>
 //Incluye funcionalidades para generar numeros pseudo aleatorios
 #include <random>
+// Para la función rand()
+#include <cstdlib> 
+// Para usar std::fixed y std::setprecision
+#include <iomanip> 
 
 #endif

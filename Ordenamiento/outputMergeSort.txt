@@ -1,26 +1,52 @@
 Arreglos Aleatorios: 
-Vector 1: El arreglo de tamanio: 10 tardo 0 ms en ordenarse con MergeSort
+Vector 1: El arreglo de tamanio: 10.000 tardo 0.004 ms en ordenarse con MergeSort
 
-Vector 2: El arreglo de tamanio: 100 tardo 0 ms en ordenarse con MergeSort
+Vector 2: El arreglo de tamanio: 100.000 tardo 0.046 ms en ordenarse con MergeSort
 
-Vector 3: El arreglo de tamanio: 1000 tardo 0 ms en ordenarse con MergeSort
+Vector 3: El arreglo de tamanio: 1000.000 tardo 0.634 ms en ordenarse con MergeSort
 
-Vector 4: El arreglo de tamanio: 10000 tardo 5 ms en ordenarse con MergeSort
+Vector 4: El arreglo de tamanio: 10000.000 tardo 5.120 ms en ordenarse con MergeSort
 
-Vector 5: El arreglo de tamanio: 100000 tardo 59 ms en ordenarse con MergeSort
+Vector 5: El arreglo de tamanio: 100000.000 tardo 59.855 ms en ordenarse con MergeSort
 
-Vector 6: El arreglo de tamanio: 1e+06 tardo 819 ms en ordenarse con MergeSort
+Vector 6: El arreglo de tamanio: 1000000.000 tardo 703.986 ms en ordenarse con MergeSort
 
-Arreglos Ordenados: 
-Vector 1: El arreglo de tamanio: 10 tardo 0 ms en ordenarse con MergeSort
+Arreglos Ordenados de menor a mayor: 
+Vector 1: El arreglo de tamanio: 10.000 tardo 0.005 ms en ordenarse con MergeSort
 
-Vector 2: El arreglo de tamanio: 100 tardo 0 ms en ordenarse con MergeSort
+Vector 2: El arreglo de tamanio: 100.000 tardo 0.038 ms en ordenarse con MergeSort
 
-Vector 3: El arreglo de tamanio: 1000 tardo 0 ms en ordenarse con MergeSort
+Vector 3: El arreglo de tamanio: 1000.000 tardo 0.407 ms en ordenarse con MergeSort
 
-Vector 4: El arreglo de tamanio: 10000 tardo 7 ms en ordenarse con MergeSort
+Vector 4: El arreglo de tamanio: 10000.000 tardo 4.702 ms en ordenarse con MergeSort
 
-Vector 5: El arreglo de tamanio: 100000 tardo 83 ms en ordenarse con MergeSort
+Vector 5: El arreglo de tamanio: 100000.000 tardo 51.139 ms en ordenarse con MergeSort
 
-Vector 6: El arreglo de tamanio: 1e+06 tardo 835 ms en ordenarse con MergeSort
+Vector 6: El arreglo de tamanio: 1000000.000 tardo 593.092 ms en ordenarse con MergeSort
+
+Arreglos en forma de montania: 
+Vector 1: El arreglo de tamanio: 10.000 tardo 0.005 ms en ordenarse con MergeSort
+
+Vector 2: El arreglo de tamanio: 100.000 tardo 0.039 ms en ordenarse con MergeSort
+
+Vector 3: El arreglo de tamanio: 1000.000 tardo 0.425 ms en ordenarse con MergeSort
+
+Vector 4: El arreglo de tamanio: 10000.000 tardo 6.343 ms en ordenarse con MergeSort
+
+Vector 5: El arreglo de tamanio: 100000.000 tardo 60.902 ms en ordenarse con MergeSort
+
+Vector 6: El arreglo de tamanio: 1000000.000 tardo 587.542 ms en ordenarse con MergeSort
+
+Arreglos con muchos valores repetidos: 
+Vector 1: El arreglo de tamanio: 10.000 tardo 0.005 ms en ordenarse con MergeSort
+
+Vector 2: El arreglo de tamanio: 100.000 tardo 0.042 ms en ordenarse con MergeSort
+
+Vector 3: El arreglo de tamanio: 1000.000 tardo 0.462 ms en ordenarse con MergeSort
+
+Vector 4: El arreglo de tamanio: 10000.000 tardo 5.689 ms en ordenarse con MergeSort
+
+Vector 5: El arreglo de tamanio: 100000.000 tardo 100.878 ms en ordenarse con MergeSort
+
+Vector 6: El arreglo de tamanio: 1000000.000 tardo 710.102 ms en ordenarse con MergeSort
 

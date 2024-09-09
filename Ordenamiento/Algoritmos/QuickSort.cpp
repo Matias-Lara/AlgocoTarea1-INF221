@@ -10,17 +10,17 @@ using namespace std;
  */
 
 int partition(vector<int>& arr, int low, int high) {
-    //Indice del elemento central
-    int mid = low + (high - low) / 2;
-    int pivot = arr[mid];  //Se escoge como pivote el elemento centrla
+    //Pivote elemento aleatorio
+    int randomIndex = low + rand() % (high - low + 1);
+    int pivot = arr[randomIndex];
 
-    //Se mueve el pivote al final para reutilizar la misma logica de particion que funciona con el ultimo elemento como pivote
-    swap(arr[mid], arr[high]);
+    //Pivote al final para reutilizar logica de particion ultimo elemento como pivote
+    swap(arr[randomIndex], arr[high]);
     
-    //Indice del ultimo elemento mas pequenio que el pivote
+    //Ultimo elemento mas pequenio que el pivote
     int i = low - 1;
 
-    //Este bucle asegura la invariante: [ElemMenores][ElemMayores/Iguales][SinProcesar][Pivote]
+    //Invariante: [ElemMenores][ElemMayores/Iguales][SinProcesar][Pivote]
     for (int j = low; j <= high - 1; j++) {
         if (arr[j] < pivot) {
             i++;
@@ -28,15 +28,12 @@ int partition(vector<int>& arr, int low, int high) {
         }
     }
     
-    swap(arr[i + 1], arr[high]); //Se coloca el pivote en su posicion final [ElemMenores][Pivote][ElemMayores]
-    return i + 1; //Retorna posicion del pivote
+    swap(arr[i + 1], arr[high]); //[ElemMenores][Pivote][ElemMayores]
+    return i + 1; //Posicion del Pivote
 }
 
 
 void QuickSort(vector<int>& arr, int low, int high) {
-    
-    //low va a crecer en caso de los ElemMenores y hight va a decrecer en el caso de los ElemMayores
-    //Por lo que en algun momento se va a llamar a QuickSort con arreglos 1 elemento
     //Esta condicion permite no seguir diviendo esos arreglos de un solo elemento
     if (low < high) {
         int posPivot = partition(arr, low, high);
@@ -47,10 +44,10 @@ void QuickSort(vector<int>& arr, int low, int high) {
 }
 
 
-
+//Programa principal en el que se prueba el algoritmo y se crean los output.txt
 int main() {
     //retorna un vector de vectores
-    vector< vector<int> > allArrays = readInputSort("inputSort.txt");
+    vector< vector<int> > allArrays = readInputSort("../inputSort.txt");
 
     ofstream outputFile("../outputQuickSort.txt");
 
@@ -62,31 +59,17 @@ int main() {
     for (size_t i = 0; i < allArrays.size(); ++i) {
         //Inicio del cronometro
         auto start = chrono::high_resolution_clock::now();
-        //Uso de MergeSort.
+        //Uso de QuickSort.
         int size = allArrays[i].size();
         QuickSort(allArrays[i], 0, size - 1); //QuickSort ordena dentro del mismo vector.
         //Final del cronometro
         auto end = chrono::high_resolution_clock::now();
 
         //Calcular la diferencia en ms
-        auto duration = chrono::duration_cast<chrono::milliseconds>(end - start).count();
+        float duration = (std::chrono::duration_cast<std::chrono::microseconds>(end - start).count() / 1000.0f);
 
         //Imprime el arr ordenado en un archivo de texto y el tiempo que demoro con la funcion usada
-        if (i+1 <= 6) {
-            if (i+1 == 1){
-                outputFile << "Arreglos Aleatorios: " << endl;
-            }
-            outputFile << "Vector " << i + 1 << ": ";
-            outputFile << "El arreglo de tamanio: " << pow(10, i + 1) << " tardo " << duration << " ms" << " en ordenarse con QuickSort" << endl;
-            outputFile << endl;
-        } else if (i+1 <= 12) {
-            if (i+1 == 7){
-                outputFile << "Arreglos Ordenados: " << endl;
-            }
-            outputFile << "Vector " << i - 5 << ": ";
-            outputFile << "El arreglo de tamanio: " << pow(10, i - 5) << " tardo " << duration << " ms" << " en ordenarse con QuickSort" << endl;
-            outputFile << endl;
-        }
+        printSortingResult(outputFile, i, allArrays[i].size(), duration, "QuickSort");
     }
 
     return 0;

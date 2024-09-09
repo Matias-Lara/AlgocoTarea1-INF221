@@ -4,12 +4,18 @@
 
 #include "ahead.h"
 
+using namespace std;
+
 //Declaracion de Funciones auxiliares
-std::vector<int> generate_arr(size_t n);
+vector<int> generate_arr(size_t n);
 
-std::string printArray(const std::vector<int>& arr);
+string printArray(const vector<int>& arr);
 
-std::vector<std::vector<int>> readInputSort(const std::string& filename);
+vector<vector<int>> readInputSort(const string& filename);
+
+vector<int> LineToVector(const string& line);
+
+void printSortingResult(ofstream& outputFile, int i, int size, float duration, const string& algorithmName);
 
 #endif 
 

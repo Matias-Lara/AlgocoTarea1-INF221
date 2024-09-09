@@ -1,0 +1,52 @@
+Arreglos Aleatorios: 
+Vector 1: El arreglo de tamanio: 10.000 tardo 0.002 ms en ordenarse con Included Sort
+
+Vector 2: El arreglo de tamanio: 100.000 tardo 0.013 ms en ordenarse con Included Sort
+
+Vector 3: El arreglo de tamanio: 1000.000 tardo 0.207 ms en ordenarse con Included Sort
+
+Vector 4: El arreglo de tamanio: 10000.000 tardo 2.310 ms en ordenarse con Included Sort
+
+Vector 5: El arreglo de tamanio: 100000.000 tardo 28.458 ms en ordenarse con Included Sort
+
+Vector 6: El arreglo de tamanio: 1000000.000 tardo 422.428 ms en ordenarse con Included Sort
+
+Arreglos Ordenados de menor a mayor: 
+Vector 1: El arreglo de tamanio: 10.000 tardo 0.001 ms en ordenarse con Included Sort
+
+Vector 2: El arreglo de tamanio: 100.000 tardo 0.013 ms en ordenarse con Included Sort
+
+Vector 3: El arreglo de tamanio: 1000.000 tardo 0.125 ms en ordenarse con Included Sort
+
+Vector 4: El arreglo de tamanio: 10000.000 tardo 1.464 ms en ordenarse con Included Sort
+
+Vector 5: El arreglo de tamanio: 100000.000 tardo 18.947 ms en ordenarse con Included Sort
+
+Vector 6: El arreglo de tamanio: 1000000.000 tardo 226.658 ms en ordenarse con Included Sort
+
+Arreglos en forma de montania: 
+Vector 1: El arreglo de tamanio: 10.000 tardo 0.001 ms en ordenarse con Included Sort
+
+Vector 2: El arreglo de tamanio: 100.000 tardo 0.013 ms en ordenarse con Included Sort
+
+Vector 3: El arreglo de tamanio: 1000.000 tardo 0.420 ms en ordenarse con Included Sort
+
+Vector 4: El arreglo de tamanio: 10000.000 tardo 5.064 ms en ordenarse con Included Sort
+
+Vector 5: El arreglo de tamanio: 100000.000 tardo 77.311 ms en ordenarse con Included Sort
+
+Vector 6: El arreglo de tamanio: 1000000.000 tardo 1036.177 ms en ordenarse con Included Sort
+
+Arreglos con muchos valores repetidos: 
+Vector 1: El arreglo de tamanio: 10.000 tardo 0.001 ms en ordenarse con Included Sort
+
+Vector 2: El arreglo de tamanio: 100.000 tardo 0.012 ms en ordenarse con Included Sort
+
+Vector 3: El arreglo de tamanio: 1000.000 tardo 0.188 ms en ordenarse con Included Sort
+
+Vector 4: El arreglo de tamanio: 10000.000 tardo 2.342 ms en ordenarse con Included Sort
+
+Vector 5: El arreglo de tamanio: 100000.000 tardo 28.097 ms en ordenarse con Included Sort
+
+Vector 6: El arreglo de tamanio: 1000000.000 tardo 365.282 ms en ordenarse con Included Sort
+
