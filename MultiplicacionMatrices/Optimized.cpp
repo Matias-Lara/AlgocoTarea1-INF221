@@ -1,46 +1,52 @@
-#include <iostream>
-#include <vector>
+#include "ahead.h"
+#include "auxiliary.h"
 
 /*
  * Este archivo contiene código adaptado de:
- * https://pastebin.com/9TNNbwGk
+ * https://pastebin.com/ZE0H0bRr
  * Fuente: https://youtu.be/ChvEYb7UT34
  */
 
 
-// Función para transponer una matriz
-void transposeMatrix(std::vector<std::vector<uint32_t>>& m) {
-    uint16_t size = m.size(); // Suponemos que la matriz es cuadrada
+//Funcion para transponer una matriz no cuadrada
+vector<vector<int>> transposeMatrix(const vector<vector<int>>& m) {
+    int rows = m.size();
+    int cols = m[0].size();
+    vector<vector<int>> transposed(cols, vector<int>(rows));
 
-    for(uint16_t i = 0; i < size; ++i) {
-        for(uint16_t j = i; j < size; ++j) {
-            uint32_t t = m[i][j];
-            m[i][j] = m[j][i];
-            m[j][i] = t;
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < cols; ++j) {
+            transposed[j][i] = m[i][j];
         }
     }
+    return transposed;
 }
 
-///
-/// r = a*b (Matrices)
-///  -> La función transpondrá internamente la matriz B para optimizar la localidad de datos.
-///
-void multiplyMatrices(std::vector<std::vector<uint32_t>>& r, 
-                      const std::vector<std::vector<uint32_t>>& a, 
-                      std::vector<std::vector<uint32_t>> b) { // b no es const porque se va a transponer dentro de la función
+//Multiplicacion de matrices optimizada para matrices no cuadradas
+void multiplyMatrices(vector<vector<int>>& result, 
+                      const vector<vector<int>>& a, 
+                      const vector<vector<int>>& b) {
 
-    uint16_t size = a.size(); // Asumimos que las matrices son cuadradas
+    int rowsA = a.size();
+    int colsA = a[0].size();  // Número de columnas de A = Número de filas de B
+    int colsB = b[0].size();  // Número de columnas de B
 
     // Transponemos la matriz B para mejorar la localidad de datos
-    transposeMatrix(b);
+    vector<vector<int>> transposedB = transposeMatrix(b);
 
-    for(uint16_t i = 0; i < size; ++i) {
-        for(uint16_t j = 0; j < size; ++j) {
-            uint32_t s = 0;
-            for(uint16_t k = 0; k < size; ++k) {
-                s += a[i][k] * b[j][k]; // Nota: ahora b[j][k] debido a la transposición
+    // Asignar tamaño a la matriz resultante
+    result.assign(rowsA, vector<int>(colsB, 0));
+
+    // Multiplicación optimizada omitiendo multiplicaciones con 0
+    for (int i = 0; i < rowsA; ++i) {
+        for (int j = 0; j < colsB; ++j) {
+            int sum = 0;
+            for (int k = 0; k < colsA; ++k) {
+                if (a[i][k] != 0 && transposedB[j][k] != 0) {
+                    sum += a[i][k] * transposedB[j][k];  // Producto sólo si ambos elementos son distintos de 0
+                }
             }
-            r[i][j] = s;
+            result[i][j] = sum;
         }
     }
 }
