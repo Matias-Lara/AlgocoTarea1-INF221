@@ -8,6 +8,4 @@ En este repositorio encontrarás los resultados del *profiling* realizado a vari
 - **Lógica de Profiling:** En el archivo `main` de cada algoritmo encontrarás la lógica utilizada para el *profiling* de rendimiento.
 - **Detalles de los Datasets:** Se incluye una explicación detallada sobre los datasets empleados para realizar las pruebas.
 
-Si tienes curiosidad o deseas profundizar más en la implementación de estos algoritmos, este repositorio es un excelente recurso para estudiar tanto la teoría como la práctica de estos algoritmos clásicos.
-
 ~ Matías Lara
