@@ -65,7 +65,7 @@ void optimized_multiply(vector<vector<int>>& result,
 int main() {
     srand(time(0)); //Semilla aleatoria para generateRandomMatrix
 
-    vector<int> sizes = {128, 256, 1024, 2048}; //Tamanios de las matrices a medir rendimiento
+    vector<int> sizes = {128, 256, 1024, 2048, 4096}; //Tamanios de las matrices a medir rendimiento
 
     ofstream outputFile("outputOptimized.csv"); //Archivo de Salida
     if (!outputFile.is_open()) {

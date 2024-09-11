@@ -6,8 +6,6 @@ using namespace std;
 
 /*
  * Este archivo contiene código adaptado de:
- * ChatGPT
- * Prompt: Explicame por que este codigo *CodigoEncontradoEnGeeksforGeeks* no es un strassen, y que modificaciones le hacen falta para serlo.
  * Fuente: https://www.geeksforgeeks.org/strassens-matrix-multiplication/
  */
 
