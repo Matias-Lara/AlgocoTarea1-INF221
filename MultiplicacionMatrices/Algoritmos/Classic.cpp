@@ -10,11 +10,18 @@ using namespace std;
  */
 
 
-//Multiplicacion Estandar
-void multiplyMatrices(vector<vector<int>>& result, const vector<vector<int>>& a, const vector<vector<int>>& b) {
+//Multiplicacion Estandar (O(n^3))
+void traditional_multiply(vector<vector<int>>& result, const vector<vector<int>>& a, const vector<vector<int>>& b) {
     int rowsA = a.size();
     int colsA = a[0].size();
+    int rowsB = b.size();
     int colsB = b[0].size();
+
+    //Compatibilidad de dimensiones
+    if (colsA != rowsB) {
+        cerr << "Error: Las matrices no son dimensionalmente multiplicables. " << endl;
+        return;
+    }
 
     result.assign(rowsA, vector<int>(colsB, 0)); //Se rellena con 0 la matriz resultado
 
@@ -24,7 +31,7 @@ void multiplyMatrices(vector<vector<int>>& result, const vector<vector<int>>& a,
         for (int j = 0; j < colsB; ++j) {
             int sum = 0; //Se reinicia la var sum
 
-            //Sumatoria de cada elemento de la fila de A por cada elemento de la columna de B
+            //Multiplicacion de cada elemento de la fila de A por el correspondiente elemento en la columna de B
             for (int k = 0; k < colsA; ++k) {
 
                 //Optimizacion para no multiplicar por 0
@@ -43,7 +50,7 @@ void multiplyMatrices(vector<vector<int>>& result, const vector<vector<int>>& a,
 int main() {
     srand(time(0)); //Semilla aleatoria para generateRandomMatrix
 
-    vector<int> sizes = {128, 256, 1024, 2048, 4096}; //Tamanios de las matrices a probar
+    vector<int> sizes = {128, 256, 1024, 2048, 4096}; //Tamanios de las matrices a medir rendimiento
 
     ofstream outputFile("outputClassic.csv"); //Archivo de Salida
     if (!outputFile.is_open()) {
@@ -60,7 +67,7 @@ int main() {
         vector<vector<int>> result;
 
         auto start = chrono::high_resolution_clock::now();
-        multiplyMatrices(result, matrixA, matrixB);
+        traditional_multiply(result, matrixA, matrixB);
         auto end = chrono::high_resolution_clock::now();
         float duration = (chrono::duration_cast<chrono::microseconds>(end - start).count() / 1000.0f);
 
@@ -78,7 +85,7 @@ int main() {
         vector<vector<int>> result;
 
         auto start = chrono::high_resolution_clock::now();
-        multiplyMatrices(result, matrixA, matrixB);
+        traditional_multiply(result, matrixA, matrixB);
         auto end = chrono::high_resolution_clock::now();
         float duration = (chrono::duration_cast<chrono::microseconds>(end - start).count() / 1000.0f);
 

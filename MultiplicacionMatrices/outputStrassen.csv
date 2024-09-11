@@ -1,0 +1,10 @@
+Tiempos de ejecucion (ms) de matrices de iguales dimensiones:
+Tiempo para matriz 128x128: 32.445 ms
+Tiempo para matriz 256x256: 241.449 ms
+Tiempo para matriz 1024x1024: 11316.7 ms
+Tiempo para matriz 2048x2048: 79299 ms
+Tiempos de ejecucion (ms) de matrices cuadradas con 80% de ceros
+Tiempo para matriz (80% de 0's) 128x128: 33.65 ms
+Tiempo para matriz (80% de 0's) 256x256: 237.568 ms
+Tiempo para matriz (80% de 0's) 1024x1024: 11405.6 ms
+Tiempo para matriz (80% de 0's) 2048x2048: 86453.1 ms
