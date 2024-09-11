@@ -1,5 +1,13 @@
-Bienvenido.
-En este repositorio encontraras los resultados de hacer profiling a algunos algortimos de ordenamiento y algoritmos de multiplicacion de matrices.
-Los codigos de los algoritmos se encuentran comentados para mayor entendimiento, ademas de indicar la fuente del codigo.
-En el main de los algoritmos se encuentra la logica usada para el profiling, ademas del detalle de los datasets usados.
-~ Matias Lara
+# Bienvenido al Repositorio de Profiling de Algoritmos
+
+En este repositorio encontrarás los resultados del *profiling* realizado a varios algoritmos de ordenamiento y multiplicación de matrices. 
+
+## Contenido del Repositorio
+
+- **Códigos comentados:** Los códigos de los algoritmos están completamente comentados para facilitar su comprensión, además de incluir referencias a las fuentes originales.
+- **Lógica de Profiling:** En el archivo `main` de cada algoritmo encontrarás la lógica utilizada para el *profiling* de rendimiento.
+- **Detalles de los Datasets:** Se incluye una explicación detallada sobre los datasets empleados para realizar las pruebas.
+
+Si tienes curiosidad o deseas profundizar más en la implementación de estos algoritmos, este repositorio es un excelente recurso para estudiar tanto la teoría como la práctica de estos algoritmos clásicos.
+
+~ Matías Lara
